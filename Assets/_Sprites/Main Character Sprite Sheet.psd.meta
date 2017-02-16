@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: 5b9677e528b403b4eaa7208cb160df9b
+timeCreated: 1487237256
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Death Left 1
+    21300002: Death Left 2
+    21300004: Death Left 3
+    21300006: Main Character Sprite Sheet_3
+    21300008: Main Character Sprite Sheet_4
+    21300010: Main Character Sprite Sheet_5
+    21300012: Main Character Sprite Sheet_6
+    21300014: Main Character Sprite Sheet_7
+    21300016: Main Character Sprite Sheet_8
+    21300018: Main Character Sprite Sheet_9
+    21300020: Idle Right 1
+    21300022: Idle Right 2
+    21300024: Idle Right 3
+    21300026: Idle Right 4
+    21300028: Main Character Sprite Sheet_14
+    21300030: Main Character Sprite Sheet_15
+    21300032: Main Character Sprite Sheet_16
+    21300034: Main Character Sprite Sheet_17
+    21300036: Main Character Sprite Sheet_18
+    21300038: Main Character Sprite Sheet_19
+    21300040: Main Character Sprite Sheet_20
+    21300042: Main Character Sprite Sheet_21
+    21300044: Main Character Sprite Sheet_22
+    21300046: Main Character Sprite Sheet_23
+    21300048: Main Character Sprite Sheet_24
+    21300050: Main Character Sprite Sheet_25
+    21300052: Main Character Sprite Sheet_26
+    21300054: Main Character Sprite Sheet_27
+    21300056: Main Character Sprite Sheet_28
+    21300058: Main Character Sprite Sheet_29
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death Left 1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1908
+        width: 173
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death Left 2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1910
+        width: 211
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death Left 3
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1908
+        width: 327
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1649
+        width: 173
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1649
+        width: 177
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1650
+        width: 202
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1394
+        width: 185
+        height: 754
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1394
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1395
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1395
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Idle Right 1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1137
+        width: 185
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Idle Right 2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1138
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Idle Right 3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1137
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Idle Right 4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1137
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 880
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 879
+        width: 122
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 881
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 881
+        width: 212
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 621
+        width: 172
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 623
+        width: 123
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 625
+        width: 188
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 625
+        width: 212
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 364
+        width: 172
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 364
+        width: 162
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 364
+        width: 152
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 364
+        width: 166
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 108
+        width: 173
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 108
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 108
+        width: 152
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main Character Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 108
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
