@@ -1,23 +1,23 @@
 fileFormatVersion: 2
 guid: 66252dc9d2bdcde4b8c23dfa2d8c6e26
-timeCreated: 1487231339
+timeCreated: 1487491923
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Skeleton Sprite Sheet_0
-    21300002: Skeleton Sprite Sheet_1
-    21300004: Skeleton Sprite Sheet_2
-    21300006: Skeleton Sprite Sheet_3
-    21300008: Skeleton Sprite Sheet_4
-    21300010: Skeleton Sprite Sheet_5
-    21300012: Skeleton Sprite Sheet_6
-    21300014: Skeleton Sprite Sheet_7
-    21300016: Skeleton Sprite Sheet_8
-    21300018: Skeleton Sprite Sheet_9
-    21300020: Skeleton Sprite Sheet_10
-    21300022: Skeleton Sprite Sheet_11
-    21300024: Skeleton Sprite Sheet_12
-    21300026: Skeleton Sprite Sheet_13
+    21300000: Run (L) 1
+    21300002: Run (L) 2
+    21300004: Run (L) 3
+    21300006: Run (L) 4
+    21300008: Run (R) 1
+    21300010: Run (R) 2
+    21300012: Run (R) 3
+    21300014: Run (R) 4
+    21300016: Dead (L) 1
+    21300018: Dead (L) 2
+    21300020: Dead (L) 3
+    21300022: Dead (R) 1
+    21300024: Dead (R) 2
+    21300026: Dead (R) 3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -84,182 +84,182 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_0
+      name: Run (L) 1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 801
-        width: 115
-        height: 165
+        x: 0
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_1
+      name: Run (L) 2
       rect:
         serializedVersion: 2
-        x: 269
-        y: 801
-        width: 115
-        height: 170
+        x: 250
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_2
+      name: Run (L) 3
       rect:
         serializedVersion: 2
-        x: 456
-        y: 801
-        width: 115
-        height: 165
+        x: 500
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_3
+      name: Run (L) 4
       rect:
         serializedVersion: 2
-        x: 643
-        y: 801
-        width: 115
-        height: 170
+        x: 750
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_4
+      name: Run (R) 1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 564
-        width: 115
-        height: 165
+        x: 0
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_5
+      name: Run (R) 2
       rect:
         serializedVersion: 2
-        x: 269
-        y: 564
-        width: 115
-        height: 170
+        x: 250
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_6
+      name: Run (R) 3
       rect:
         serializedVersion: 2
-        x: 456
-        y: 564
-        width: 115
-        height: 165
+        x: 500
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_7
+      name: Run (R) 4
       rect:
         serializedVersion: 2
-        x: 643
-        y: 564
-        width: 115
-        height: 170
+        x: 750
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_8
+      name: Dead (L) 1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 327
-        width: 115
-        height: 165
+        x: 0
+        y: 250
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_9
+      name: Dead (L) 2
       rect:
         serializedVersion: 2
-        x: 268
-        y: 327
-        width: 110
-        height: 85
+        x: 250
+        y: 250
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_10
+      name: Dead (L) 3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 327
-        width: 110
-        height: 85
+        x: 500
+        y: 250
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_11
+      name: Dead (R) 1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 90
-        width: 115
-        height: 165
+        x: 0
+        y: 0
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_12
+      name: Dead (R) 2
       rect:
         serializedVersion: 2
-        x: 268
-        y: 90
-        width: 110
-        height: 85
+        x: 250
+        y: 0
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Skeleton Sprite Sheet_13
+      name: Dead (R) 3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 90
-        width: 110
-        height: 85
+        x: 500
+        y: 2
+        width: 250
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
