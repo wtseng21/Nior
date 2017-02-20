@@ -8,15 +8,20 @@ public class PlayerController : MonoBehaviour {
     public float    jumpForce;
     public bool     hasKey;
     public int      lives;
+    public Sprite   openGate;
+    public Sprite   closeGate;
 
 
     private Rigidbody2D rb2d;
     private Animator animate;
+    private SpriteRenderer spriteRen;
 
     private bool faceRight;
     private bool isAttack;
     private bool isGround;
     private bool jump;
+    private int loadedLvl;
+    private string curScene;
 
     [SerializeField]
     private LayerMask whatIsGround;
@@ -28,14 +33,17 @@ public class PlayerController : MonoBehaviour {
     private float groundRadius;
 
     
-
     void Start ()
     {
         faceRight = true;
         rb2d      = GetComponent<Rigidbody2D>();
         animate   = GetComponent<Animator>();
+        spriteRen = gameObject.GetComponent<SpriteRenderer>();
         hasKey    = false;
         lives     = 3;
+        loadedLvl = SceneManager.GetActiveScene().buildIndex;
+        curScene  = SceneManager.GetActiveScene().name;
+        
 	}
 
 
@@ -43,8 +51,17 @@ public class PlayerController : MonoBehaviour {
     {
         Inputs();
 
-        if (Input.GetKey(KeyCode.R))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(curScene);
+            
+        if (Input.GetKeyDown(KeyCode.Q))
+            SceneManager.LoadScene("Start Menu");
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            SceneManager.LoadScene(loadedLvl + 1);
+
+        if (lives == 0)
+            SceneManager.LoadScene("Game Over");
     }
 		
 
@@ -71,7 +88,41 @@ public class PlayerController : MonoBehaviour {
         {
             collision.gameObject.SetActive(false);
             hasKey = true;
-        }   
+        }
+
+        if (collision.gameObject.CompareTag("Level2"))
+            SceneManager.LoadScene("Scene2");
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        var collide = collision.gameObject;
+
+        if (collide.CompareTag("Gate") && hasKey)
+        {
+            hasKey = false;
+            loadedLvl += 1;
+            collision.gameObject.GetComponent<SpriteRenderer>().sprite = openGate;
+            collision.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0, 0);
+        }
+
+        if (collide.gameObject.CompareTag("Start Sign"))
+            SceneManager.LoadScene("Scene1");
+
+        if (collide.gameObject.CompareTag("Quit Sign"))
+            Application.Quit();
+
+        if (collide.gameObject.CompareTag("Menu Sign"))
+            SceneManager.LoadScene("Start Menu");
+
+        if (collide.gameObject.CompareTag("Restart Sign"))
+            SceneManager.LoadScene("Scene1");
+
+        if (collide.gameObject.CompareTag("Finish") && !animate.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            rb2d.AddForce(new Vector2(-250, 0));
+            lives -= 1;
+        }      
     }
 
 
@@ -127,8 +178,8 @@ public class PlayerController : MonoBehaviour {
 
     void ResetValues()
     {
-        isAttack = false;
-        jump = false;
+        isAttack    = false;
+        jump        = false;
     }
 
 

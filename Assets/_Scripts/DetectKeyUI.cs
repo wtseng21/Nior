@@ -12,8 +12,10 @@ public class DetectKeyUI : MonoBehaviour {
         gameObject.GetComponent<SpriteRenderer>().sprite = noKey;
 	}
 	
-	void LateUpdate () {
+	void Update () {
         if (Player.GetComponent<PlayerController>().hasKey)
             gameObject.GetComponent<SpriteRenderer>().sprite = hasKey;
+        else
+            gameObject.GetComponent<SpriteRenderer>().sprite = noKey;
 	}
 }
