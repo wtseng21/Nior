@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d23e45eccfb34fc4cb32480edf6a10ac
-timeCreated: 1487481121
+timeCreated: 1487544792
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -347,19 +347,6 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Swing (L) 4
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 750
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: Swing (R) 1
       rect:
         serializedVersion: 2
@@ -390,19 +377,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 500
-        y: 500
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Swing (R) 4
-      rect:
-        serializedVersion: 2
-        x: 750
         y: 500
         width: 250
         height: 250
