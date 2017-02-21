@@ -10,40 +10,32 @@ public class PlayerController : MonoBehaviour {
     public int      lives;
     public Sprite   openGate;
     public Sprite   closeGate;
+    public LayerMask whatIsGround;
+    public Transform[] groundPoints;
+    public float groundRadius;
+    public bool isAttack;
 
 
     private Rigidbody2D rb2d;
     private Animator animate;
-    private SpriteRenderer spriteRen;
 
     private bool faceRight;
-    private bool isAttack;
     private bool isGround;
     private bool jump;
     private int loadedLvl;
     private string curScene;
 
-    [SerializeField]
-    private LayerMask whatIsGround;
-
-    [SerializeField]
-    private Transform[] groundPoints;
-
-    [SerializeField]
-    private float groundRadius;
-
+  
     
     void Start ()
     {
         faceRight = true;
         rb2d      = GetComponent<Rigidbody2D>();
         animate   = GetComponent<Animator>();
-        spriteRen = gameObject.GetComponent<SpriteRenderer>();
         hasKey    = false;
         lives     = 3;
         loadedLvl = SceneManager.GetActiveScene().buildIndex;
         curScene  = SceneManager.GetActiveScene().name;
-        
 	}
 
 
@@ -61,7 +53,7 @@ public class PlayerController : MonoBehaviour {
             SceneManager.LoadScene(loadedLvl + 1);
 
         if (lives == 0)
-            SceneManager.LoadScene("Game Over");
+            StartCoroutine(playerDeath());
     }
 		
 
@@ -90,8 +82,18 @@ public class PlayerController : MonoBehaviour {
             hasKey = true;
         }
 
-        if (collision.gameObject.CompareTag("Level2"))
-            SceneManager.LoadScene("Scene2");
+        if (collision.gameObject.CompareTag("AdvanceLvl"))
+            SceneManager.LoadScene(loadedLvl + 1);
+
+        if (collision.gameObject.CompareTag("Fall Death"))
+            SceneManager.LoadScene("Game Over");
+
+        if (collision.gameObject.CompareTag("Health Kit") && lives < 3)
+        {
+            lives += 1;
+            collision.gameObject.SetActive(false);
+        }
+            
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -100,10 +102,9 @@ public class PlayerController : MonoBehaviour {
 
         if (collide.CompareTag("Gate") && hasKey)
         {
-            hasKey = false;
-            loadedLvl += 1;
             collision.gameObject.GetComponent<SpriteRenderer>().sprite = openGate;
             collision.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0, 0);
+            hasKey = false;
         }
 
         if (collide.gameObject.CompareTag("Start Sign"))
@@ -118,11 +119,13 @@ public class PlayerController : MonoBehaviour {
         if (collide.gameObject.CompareTag("Restart Sign"))
             SceneManager.LoadScene("Scene1");
 
-        if (collide.gameObject.CompareTag("Finish") && !animate.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        if (collide.gameObject.CompareTag("Enemy") && !animate.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
-            rb2d.AddForce(new Vector2(-250, 0));
-            lives -= 1;
-        }      
+            var coroutine = DamageRecover();
+            StartCoroutine(coroutine);
+        }
+
+
     }
 
 
@@ -199,5 +202,29 @@ public class PlayerController : MonoBehaviour {
             }
         }
         return false;
+    }
+
+    IEnumerator DamageRecover()
+    {
+        GetComponent<PlayerController>().enabled = false;
+        rb2d.AddForce(new Vector2(-250, 0));
+        lives -= 1;
+        animate.SetInteger("Lives", lives);
+
+        if (lives == 0)
+            StartCoroutine(playerDeath());
+        else
+        {
+            yield return new WaitForSeconds(1.2f);
+            GetComponent<PlayerController>().enabled = true;
+        }
+    }
+
+    IEnumerator playerDeath()
+    {
+        yield return new WaitForSeconds(0.9f);
+        animate.speed = 0f;
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene("Game Over");
     }
 }
