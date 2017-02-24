@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Q))
             SceneManager.LoadScene("Start Menu");
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && 0 < loadedLvl && loadedLvl < 3)
             SceneManager.LoadScene(loadedLvl + 1);
 
         if (lives == 0)
@@ -76,6 +76,8 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        var collide = collision.gameObject;
+
         if (collision.gameObject.CompareTag("Key"))
         {
             collision.gameObject.SetActive(false);
@@ -93,19 +95,6 @@ public class PlayerController : MonoBehaviour {
             lives += 1;
             collision.gameObject.SetActive(false);
         }
-            
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        var collide = collision.gameObject;
-
-        if (collide.CompareTag("Gate") && hasKey)
-        {
-            collision.gameObject.GetComponent<SpriteRenderer>().sprite = openGate;
-            collision.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0, 0);
-            hasKey = false;
-        }
 
         if (collide.gameObject.CompareTag("Start Sign"))
             SceneManager.LoadScene("Scene1");
@@ -119,13 +108,27 @@ public class PlayerController : MonoBehaviour {
         if (collide.gameObject.CompareTag("Restart Sign"))
             SceneManager.LoadScene("Scene1");
 
+        if (collide.gameObject.CompareTag("Flag"))
+            SceneManager.LoadScene("Congrats");
+
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        var collide = collision.gameObject;
+
+        if (collide.CompareTag("Gate") && hasKey)
+        {
+            collision.gameObject.GetComponent<SpriteRenderer>().sprite = openGate;
+            collision.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0, 0);
+            hasKey = false;
+        }
+
         if (collide.gameObject.CompareTag("Enemy") && !animate.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
             var coroutine = DamageRecover();
             StartCoroutine(coroutine);
         }
-
-
     }
 
 

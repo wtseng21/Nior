@@ -49,12 +49,18 @@ public class EnemyController : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Edge"))
             changeDirection();
+
+        if (collision.gameObject.CompareTag("Fall Death"))
+            gameObject.SetActive(false);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && player.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
             StartCoroutine(AttackRoutine());
+
+        else if (collision.gameObject.CompareTag("Enemy"))
+            changeDirection();
     }
 
     IEnumerator AttackRoutine()
@@ -80,4 +86,6 @@ public class EnemyController : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         gameObject.SetActive(false);
     }
+
+    
 }
